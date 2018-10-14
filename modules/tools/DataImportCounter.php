@@ -420,6 +420,8 @@ if ($category == 'staff') {
                     $ssr_columns = array('STAFF_ID', 'SYEAR', 'SCHOOL_ID');
                     $ssr_values = array($staff_id, UserSyear(), UserSchool());
                     foreach ($staff_school_relationship as $ssr_v) {
+                        if ($arr_v[$array_index[$ssr_v]] != '') {
+                            $ssr_columns[] = $ssr_v;
                             if ($ssr_v == 'START_DATE') {
                                 $start_date_i = 1;
                                 if ($arr_v[$array_index[$ssr_v]] == '') {
