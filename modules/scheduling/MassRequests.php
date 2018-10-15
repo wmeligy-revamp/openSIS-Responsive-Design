@@ -73,7 +73,9 @@ if ($_REQUEST['modfunc'] != 'choose_course') {
         echo '<div class="form-group">';
         echo '<label class="control-label col-lg-4 text-right">Request to Add</label>';
         echo '<div class="col-lg-8">';
-        echo '<A HREF="javascript:void(0)" data-toggle="modal" data-target="#modal_default" onClick="cleanModal(\'course_modal\');cleanModal(\'cp_modal\');"><i class="icon-menu6 pull-right m-t-10"></i><div id="course_div" class="form-control m-b-5" readonly="readonly">Choose a Course</div></a>';
+        // Rev - WM: Adding older link here to tie to the correct session vars
+        // echo '<A HREF="javascript:void(0)" data-toggle="modal" data-target="#modal_default" onClick="cleanModal(\'course_modal\');cleanModal(\'cp_modal\');"><i class="icon-menu6 pull-right m-t-10"></i><div id="course_div" class="form-control m-b-5" readonly="readonly">Choose a Course</div></a>';
+        echo "<A HREF=# onclick='window.open(\"ForWindow.php?modname=" . strip_tags(trim($_REQUEST[modname])) . "&modfunc=choose_course\",\"\",\"scrollbars=yes,resizable=yes,width=800,height=400\");'>Choose a Course</A>";
         echo '</div>'; //.col-md-8
         echo '</div>'; //.form-group
         echo '</div>'; //.col-md-4
@@ -82,8 +84,8 @@ if ($_REQUEST['modfunc'] != 'choose_course') {
             $course_title = DBGet(DBQuery("SELECT TITLE,COURSE_ID FROM courses WHERE COURSE_ID='" . $_SESSION['MassRequests.php']['course_id'] . "'"));
             $course_title = $course_title[1]['TITLE'];
         }
-
-        //echo '</DIV>' . "<A HREF=# onclick='window.open(\"ForWindow.php?modname=" . strip_tags(trim($_REQUEST[modname])) . "&modfunc=choose_course\",\"\",\"scrollbars=yes,resizable=yes,width=800,height=400\");'>Choose a Course</A></div>";
+        // Rev - WM: Adding this back above in since the new link above is not working
+        // echo '</DIV>' . "<A HREF=# onclick='window.open(\"ForWindow.php?modname=" . strip_tags(trim($_REQUEST[modname])) . "&modfunc=choose_course\",\"\",\"scrollbars=yes,resizable=yes,width=800,height=400\");'>Choose a Course</A></div>";
 
 
         echo '<div class="col-md-4"><label class="control-label">With Teacher &amp; Period</label>';
