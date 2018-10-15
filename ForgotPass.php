@@ -324,7 +324,7 @@ $log_msg = DBGet(DBQuery("SELECT MESSAGE FROM login_message WHERE DISPLAY='Y'"))
             });
         </script>
         <!--custom script-->
-        <script src="js/custom.js"></script>
+        <script src="js/Custom.js"></script>
     </head>
     <body>
 

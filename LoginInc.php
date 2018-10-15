@@ -212,5 +212,5 @@ echo "<script type='text/javascript'>
                                         });
     </script>
     <!--custom script-->
-    <script src="js/custom.js"></script>
+    <script src="js/Custom.js"></script>
 </body>
