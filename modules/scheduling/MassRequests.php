@@ -73,7 +73,7 @@ if ($_REQUEST['modfunc'] != 'choose_course') {
         echo '<div class="form-group">';
         echo '<label class="control-label col-lg-4 text-right">Request to Add</label>';
         echo '<div class="col-lg-8">';
-        echo '<A HREF=javascript:void(0) data-toggle="modal" data-target="#modal_default" onClick="cleanModal("course_modal");cleanModal("cp_modal");"><i class="icon-menu6 pull-right m-t-10"></i><div id=course_div class="form-control m-b-5" readonly="readonly">Choose a Course</div></a>';
+        echo '<A HREF="javascript:void(0)" data-toggle="modal" data-target="#modal_default" onClick="cleanModal(\'course_modal\');cleanModal(\'cp_modal\');"><i class="icon-menu6 pull-right m-t-10"></i><div id="course_div" class="form-control m-b-5" readonly="readonly">Choose a Course</div></a>';
         echo '</div>'; //.col-md-8
         echo '</div>'; //.form-group
         echo '</div>'; //.col-md-4
