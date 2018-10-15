@@ -139,7 +139,7 @@ if (!isset($_REQUEST['_openSIS_PDF'])) {
     echo '<script type="text/javascript" src="assets/js/pages/picker_date.js"></script>';
     //echo '<script type="text/javascript" src="assets/js/pages/picker_datetime.js"></script>';
     echo '<script type="text/javascript" src="assets/js/pages/form_checkboxes_radios.js"></script>';
-    echo '<script type="text/javascript" src="js/custom.js?v=' . rand(0000, 99999) . '"></script>';
+    echo '<script type="text/javascript" src="js/Custom.js?v=' . rand(0000, 99999) . '"></script>';
     echo '<script type="text/javascript">
         $(function () {
             $(\'#loading-image\').hide();
