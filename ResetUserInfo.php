@@ -469,7 +469,7 @@ if ($_REQUEST['new_pass'] != '' && $_REQUEST['ver_pass'] != '') {
             });
         </script>
         <!--custom script-->
-        <script src="js/custom.js"></script>
+        <script src="js/Custom.js"></script>
     </head>
     <body>
 
